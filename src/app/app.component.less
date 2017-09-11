@@ -1,0 +1,187 @@
+@input-max-width-sm: 240px;
+@input-max-width-md: 350px;
+@input-max-width-lg: 450px;
+@input-label-padding-top: 8px;
+@container-single-max-width: 575px;
+@div-margin-small: 10px;
+
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0;
+    border: 1px solid #c0c0c0;
+}
+
+fieldset.edit-mode {
+    border: 2px solid red
+}
+
+legend {
+    border: 0;
+    width: auto;
+    font-size: 14px;
+    font-weight: bold;    
+    margin-bottom: 10px;
+}
+
+ul.nav-tabs li.active > a
+{
+    background-color: #1A597E !important;
+    color: #ffffff !important;
+}
+.input-small
+{
+    max-width: @input-max-width-sm;
+}
+.input-small-fixed {
+    width: @input-max-width-sm;    
+}
+.input-medium
+{
+    max-width: @input-max-width-md;
+}
+.input-large
+{
+    max-width: @input-max-width-lg;
+}
+
+.input-large
+{
+    max-width: @input-max-width-lg;
+}
+.container-single
+{
+    // border: 1px solid #ccc;
+    max-width: @container-single-max-width;
+}
+.container-single-left
+{
+    max-width: @container-single-max-width;
+    margin-left: 0;
+}
+.container-single-left .row
+{
+    padding-left: 0;
+}
+.container-single .form-group
+{
+    margin-bottom: 10px;
+}
+.custom-check-box
+{
+    height: 20px;
+    width: 20px;
+    vertical-align: bottom;
+}
+
+// div.input-label
+// {
+//     text-align: right;
+//     padding-right: 0px;
+//     padding-top: @input-label-padding-top;
+// }
+
+label.normal-text
+{
+    font-weight: normal;
+}
+
+// .box-shadow(@style, @c) when (iscolor(@c)) {
+//   -webkit-box-shadow: @style @c;
+//   box-shadow:         @style @c;
+// }
+// .box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+//   .box-shadow(@style, rgba(0, 0, 0, @alpha));
+// }
+// .box {
+//   color: saturate(@base, 5%);
+//   border-color: lighten(@base, 30%);
+//   div { .box-shadow(0 0 5px, 30%) }
+// }
+
+.margin-top-small {
+    margin-top: @div-margin-small;
+}
+
+.margin-right-small {
+    margin-right: @div-margin-small;
+}
+
+.margin-left-small {
+    margin-left: @div-margin-small;
+}
+
+.margin-bottom-small {
+    margin-bottom: @div-margin-small;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+th.sort-column-header
+{
+    cursor: pointer;
+}
+
+.cec-datepicker td.text-sm-left button.btn-sm,
+.cec-datepicker div.text-sm-right button.btn-sm {
+    font-weight: bold;
+}
+
+.cec-datepicker input.form-control {
+    background-color: #ffffff;
+}
+
+.cec-datepicker div.input-group-addon {
+    cursor: pointer;
+}
+
+.cec-datepicker .fa-calendar:before {
+    color: #3c763d;
+}
+
+.custom-warning-alert {
+    font-weight: bold;
+}
+
+form {
+    input.ng-valid[required] {
+        border-left: 5px solid #42A948; /* green */
+    }
+    input.ng-invalid {
+        border-left: 5px solid #a94442; /* red */
+    }
+    select.ng-valid[required] {
+        border-left: 5px solid #42A948; /* green */
+    }
+    select.ng-invalid {
+        border-left: 5px solid #a94442; /* red */
+    }    
+}
+
+@media (min-width: 992px) {
+    div.input-label
+    {
+        text-align: right;
+        padding-right: 0px;
+        padding-top: @input-label-padding-top;
+    }
+
+    div.input-label-display
+    {
+        text-align: right;
+        padding-right: 0px;
+        padding-top: 0;
+    }
+}
